@@ -1,0 +1,61 @@
+<%- include("partials/auth-header.ejs") %>
+    <!-- <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100" style="margin: 0%; padding:0%; border:none">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+              <div class="card-body p-5 text-center" style="background-color: #212529;border-radius: 1rem ;color:white;">
+                <h3 class="mb-5" style="padding:0%">Sign in</h3>
+               <form action="/login" method="post">
+                <div class="form-outline mb-4" style="text-align: left;">
+                  <label class="form-label" for="typeEmailX-2">Email</label>
+                  <input type="email" id="typeEmailX-2" name="email" class="form-control form-control-lg" />
+                  
+                </div>
+    
+                <div class="form-outline mb-4" style="text-align: left;">
+                  <label class="form-label" for="typePasswordX-2">Password</label>
+                  <input type="password" id="typePasswordX-2" name="password" class="form-control form-control-lg" />
+                  
+                </div> -->
+    
+                <!-- Checkbox -->
+                <!-- <div class="form-check d-flex justify-content-start mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <label class="form-check-label" for="form1Example3"> Remember password </label>
+                </div> -->
+    
+                <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+    <h4 style=" font-weight:500; margin:1rem 0">Or</h4>
+    
+                <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39; border:none"
+                  type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
+                <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998; border:none; margin-top:1rem"
+                  type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <section id="register">
+      <div class="container">
+          <form action="/login" method="post">
+          <div class="register-row">
+        <div class="register-column">
+            <label for="validationDefaultEmail" class="form-label">E-mail:</label>
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" id="validationDefaultEmail"  aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="register-column">
+            <label for="validationDefaultPassword" class="form-label">Password:</label>
+            <input type="password" class="form-control" name="password" id="validationDefaultPassword" required>
+          </div>
+          <div class="register-column">
+            <button class="btn btn-primary" type="submit" style="width: 100%; margin-top:1rem;">Login</button>
+          </div>
+        </div>
+        
+</form>
+    </div>
+</section>

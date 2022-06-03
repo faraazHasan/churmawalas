@@ -1,0 +1,26 @@
+<%- include("../partials/admin-header")%>
+
+</div>
+<section id="admin-products">
+  <form action="/products" id="products-form" enctype="multipart/form-data" method="post">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" name="name" id="floatingInput" placeholder="product-name">
+    <label for="floatingInput">Product Name</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" name="price" class="form-control" id="floatingPassword" placeholder="Price">
+    <label for="floatingPassword">Price</label>
+  </div>
+  <select class="form-select" name="quantity" form="products-form" aria-label="Default select example">
+    <option value="">none</option>
+    <option value="(100 Grams)">100 grams</option>
+  </select>
+  <div>
+    <label for="formFileLg" class="form-label">Product Photo</label>
+    <input class="form-control  form-control-lg" name="img" id="formFileLg" type="file">
+  </div>
+  <button class="btn btn-primary btn-dark" type="submit" >Upload</button>
+</form>
+</section>
+
+<%- include("../partials/admin-footer")%>

@@ -1,0 +1,586 @@
+
+h3{
+    line-height: 0;
+    font-family: "Orbitron";
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    font-size: 1.4rem;
+    margin-top: .3rem;
+    line-height: 0%;
+}
+
+hr{
+    border: 1px solid black;
+    width: 30rem;
+    margin-left: 22%;
+    margin-top: -3%;
+    margin-bottom: 1rem;
+    background: none;
+
+}
+.custom-hr{
+    background: none;
+    border: 12px dotted;
+    border-bottom: none;
+    width: 10%;
+    margin-left: 45%;
+    color: whitesmoke;
+}
+
+/* ------------------------------------- Head ------------------------------------- */
+
+#head{
+    font-family: "Great Vibes";
+    background-color: aliceblue;
+    text-align: center;
+    padding: 6rem 0 6rem 0;
+    
+}
+
+.navbar{
+    padding: 0.6rem 2rem 0.6rem 2rem;
+}
+.navbar a{
+font-size: 1.1rem;
+}
+
+.navbar a:hover{
+    font-weight: 700;
+}
+
+
+.nav-logo{
+    width: 4rem;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+.choorma-pic{
+    width: 25rem;
+    height: auto;
+
+}
+
+.choorma{
+    font-size: 7rem;
+    color: black;
+    padding-left: 5rem;
+    
+}
+
+/* ------------------------------------- Middle ------------------------------------- */
+
+.swiggy {
+    font-family:sans-serif;
+    background-color: #FC8019;
+    border:0;
+}
+
+.zomato{
+    font-family:sans-serif;
+    background-color: red;
+    border: 0;
+}
+
+#middle{
+  background-color:rgb(40, 40, 40);
+  z-index: 2;
+  text-align: center;
+  position:relative;
+  padding: 3rem 3rem 3rem 3rem;
+}
+
+#middle h1{
+  font-size: 4rem;
+  /* font-weight: bold; */
+  color: white;
+  margin: 0%;
+  margin-bottom: 2rem;
+  font-family: "Great Vibes";
+}
+
+/* ------------------------------------- Form ------------------------------------- */
+
+.container-fluid form{
+
+padding: 3rem 3rem 3rem 3rem;
+}
+
+
+/* ---------------------------------- Animations -------------------------- */
+
+@keyframes slide-from-right {
+    from {
+      transform: translateX(250%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+    
+  }
+
+  @keyframes slide-from-left {
+    from {
+      transform: translateX(-250%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+    
+  }
+  
+  .slide-left {
+    animation: slide-from-right 3s 1;
+  }
+
+  .slide-right {
+      text-align: center;
+    animation: slide-from-left 3s 1;
+  }
+
+  .card{
+    width: 18rem;
+    background-color: aliceblue;
+    margin: 3rem 1rem 3rem;
+    text-align: left;
+}
+ 
+/* ------------------------------------ 1000px to 900px --------------------------------  */
+
+  @media screen and (max-width: 1000px) and (min-width: 900px)  {
+    #head{
+        font-family: "Great Vibes";
+        background-color: aliceblue;
+        text-align: center;
+        padding: 6rem 0 23rem 0;
+        object-fit:fill;
+    }
+    h3{
+        line-height: 0;
+        font-family: "Orbitron";
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+        font-size: 1.4rem;
+        margin-top: .3rem;
+        line-height: 0%;
+    }
+    #head h1{
+        font-size: 8rem;
+    }
+    .choorma-pic{
+        width: 39rem;
+        height: auto;
+        position:absolute;
+        top: 34rem;
+        left: 8rem;
+        z-index: 0;
+    }
+    .choorma{
+        padding-left: 0%;
+    }
+
+    
+    #middle{
+        text-align: center;
+    }
+    .card{
+        width: 14rem;
+        text-align: left;
+        margin: 2rem 2rem 2rem 0rem;
+    }
+  }
+
+  /* ------------------------------------ 900px to 800px --------------------------------  */
+
+  @media screen and (max-width: 900px) and (min-width: 800px){
+    #head{
+        font-family: "Great Vibes";
+        background-color: aliceblue;
+        text-align: center;
+        padding: 6rem 0 20rem 0;
+        object-fit:fill;
+    }
+    .choorma-pic{
+        width: 35rem;
+        height: auto;
+        position:absolute;
+        top: 32rem;
+        left: 7.5rem;
+        z-index: 0;
+    }
+    #head h3{  
+        padding-right: 3rem;
+        font-size: 1.4rem;
+    }
+    
+    .choorma{
+        padding-left: 0%;
+    }
+
+    h3{
+        font-size:1rem;
+    }
+    
+    #middle{
+        text-align: center;
+    }
+    .card{
+        width: 14rem;
+        text-align: left;
+        margin: 2rem 2rem 2rem 0rem;
+    }
+  }
+
+/* ------------------------------------ 800px to 600px --------------------------------  */
+
+  @media screen and (max-width: 800px) and (min-width: 600px){
+    .choorma-pic{
+        width: 35rem;
+        height: auto;
+        position:absolute;
+        top: 33rem;
+        left: 6rem;
+        z-index: 0;
+    
+    }
+    .choorma{
+        font-size: 6rem;
+        padding-left: 0%;
+    }
+    .navbar{
+        margin: 0%;
+    }
+
+    #head{
+        font-family: "Great Vibes";
+        background-color: aliceblue;
+        text-align: center;
+        padding: 6rem 0 20rem 0;
+        object-fit:fill;
+    }
+
+    #head h3{  
+        padding-right: 3rem;
+        font-size: 1.3rem;
+    }
+
+    #head h1{
+        font-size: 7rem;
+    }
+
+    .card{
+        width: 13rem;
+        text-align: left;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+  }
+
+  
+  @media screen and (max-width: 800px) and (min-width: 600px){
+    .choorma-pic{
+        width: 35rem;
+        height: auto;
+        position:absolute;
+        top: 30rem;
+        left: 6rem;
+        z-index: 0;
+    
+    }
+    .choorma{
+        font-size: 6rem;
+        padding-left: 0%;
+    }
+    .navbar{
+        margin: 0%;
+    }
+
+    #head{
+        font-family: "Great Vibes";
+        background-color: aliceblue;
+        text-align: center;
+        padding: 6rem 0 20rem 0;
+        object-fit:fill;
+    }
+
+    .card{
+        width: 13rem;
+        text-align: left;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+  }
+
+  /* ------------------------------------ 800px to 600px --------------------------------  */
+
+  @media screen and (max-width: 800px) and (min-width: 600px){
+    .choorma-pic{
+        width: 35rem;
+        height: auto;
+        position:absolute;
+        top: 30rem;
+        left: 6rem;
+        z-index: 0;
+    
+    }
+    .choorma{
+        font-size: 6rem;
+        padding-left: 0%;
+    }
+    .navbar{
+        margin: 0%;
+    }
+
+    #head{
+        font-family: "Great Vibes";
+        background-color: aliceblue;
+        text-align: center;
+        padding: 6rem 0 20rem 0;
+        object-fit:fill;
+    }
+
+    .card{
+        width: 13rem;
+        text-align: left;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+  }
+
+  /* ------------------------------------ 600px to 500px --------------------------------  */
+
+  @media screen and (max-width: 600px) and (min-width: 500px){
+      .menu-btn{
+          margin: 3rem;
+      }
+
+    .choorma-pic{
+        width: 25rem;
+        height: auto;
+        position:absolute;
+        top: 32rem;
+        left: 4rem;
+        z-index: 0;
+    
+    }
+    .choorma{
+        font-size: 6rem;
+        padding-left: 0%;
+    }
+    .navbar{
+        margin: 0%;
+    }
+
+    #head{
+        font-family: "Great Vibes";
+        background-color: aliceblue;
+        text-align: center;
+        padding: 6rem 0 16rem 0;
+        object-fit:fill;
+    }
+
+    #head h1{
+        font-size: 5.5rem;
+    }
+
+    #head h3{
+        font-size: 1.2rem;
+        padding-right: 2.7rem;
+    }
+
+    .card{
+        width: 100%;
+        text-align: left;
+        margin: 1rem 0 1rem 0;
+    }
+  }
+
+  /* ------------------------------------ 500px to 400px --------------------------------  */
+
+  @media screen and (max-width: 500px) and (min-width: 400px){
+    .menu-btn{
+        margin: 3rem;
+    }
+
+  .choorma-pic{
+      width: 23rem;
+      height: auto;
+      position:absolute;
+      top: 33rem;
+      left: 1.5rem;
+      z-index: 0;
+  
+  }
+  .choorma{
+      font-size: 6rem;
+      padding-left: 0%;
+  }
+  .navbar{
+      margin: 0%;
+  }
+
+  #head{
+      font-family: "Great Vibes";
+      background-color: aliceblue;
+      text-align: center;
+      padding: 6rem 0 13rem 0;
+      object-fit:fill;
+  }
+
+  #head h1{
+      font-size: 4rem;
+  }
+
+  #head h3{
+    padding-right: 3rem;
+    font-size: 0.9rem;
+  }
+
+  .card{
+    width: 100%;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+}
+
+/* ------------------------------------ 400px to 300px --------------------------------  */
+
+@media screen and (max-width: 400px) and (min-width: 385px){
+    .menu-btn{
+        margin: 3rem;
+    }
+
+  .choorma-pic{
+      width: 22rem;
+      height: auto;
+      position:absolute;
+      top: 33rem;
+      left: 1rem;
+      z-index: 0;
+  
+  }
+  .choorma{
+      font-size: 6rem;
+      padding-left: 0%;
+  }
+  .navbar{
+      margin: 0%;
+  }
+
+  #head{
+      font-family: "Great Vibes";
+      background-color: aliceblue;
+      text-align: center;
+      padding: 6rem 0 13rem 0;
+      object-fit:fill;
+  }
+
+  #head h1{
+      font-size: 4rem;
+  }
+
+  #head h3{
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+    padding-right: 3rem;
+}
+
+.card{
+    width: 100%;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+}
+
+@media screen and (max-width: 385px) and (min-width: 350px){
+    .menu-btn{
+        margin: 3rem;
+    }
+
+  .choorma-pic{
+      width: 20rem;
+      height: auto;
+      position:absolute;
+      top: 33rem;
+      left: 2rem;
+      z-index: 0;
+  
+  }
+  .choorma{
+      font-size: 6rem;
+      padding-left: 0%;
+  }
+  .navbar{
+      margin: 0%;
+  }
+
+  #head{
+      font-family: "Great Vibes";
+      background-color: aliceblue;
+      text-align: center;
+      padding: 6rem 0 13rem 0;
+      object-fit:fill;
+  }
+
+  #head h1{
+      font-size: 4rem;
+  }
+
+  #head h3{
+    font-size: 0.9rem;
+    margin-bottom: 0rem;
+    padding-right: 3rem;
+}
+
+.card{
+    width: 100%;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+}
+
+@media screen and (max-width: 300px) and (min-width: 250px){
+    .menu-btn{
+        margin: 3rem;
+    }
+
+  .choorma-pic{
+      width: 16rem;
+      height: auto;
+      position:absolute;
+      top: 34rem;
+      left: 0.8rem;
+      z-index: 0;
+  
+  }
+  .choorma{
+      font-size: 6rem;
+      padding-left: 0%;
+  }
+  .navbar{
+      margin: 0%;
+  }
+
+  #head{
+      font-family: "Great Vibes";
+      background-color: aliceblue;
+      text-align: center;
+      padding: 2rem 0 11rem 0;
+      object-fit:fill;
+  }
+
+  #head h1{
+      margin-top: 0;
+      font-size: 2.8rem;
+  }
+
+  #head h3{
+    font-size: 0.6rem;
+    padding-right: 3rem;
+}
+
+.card{
+    width: 100%;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+} 

@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+<section id="body">
+<section id="menu"><br><br>
+    <h1>Food Menu</h1>
+    <hr class="custom-hr">
+<div class="products-row">
+  
+  <%items.forEach(item => {%>
+    <div class="products-column">
+      <div class="card" style="width: 100%;">
+        <img src="images/products/<%= item.photo %>" class="card-img-top" alt="...">
+
+        <div class="card-body">
+          <h6><%= item.name+" "+item.quantity %></h6>
+          <p class="card-title">Price: ₹<%= item.price %></p>
+          
+      <form action="/" method="post">
+            <input type="hidden" name="product" value="<%= item.name %>">
+            <input type="hidden" name="price" value="<%= item.price %>">
+            <input type="hidden" name="photo" value="<%= item.photo %>">
+          
+          <div class="qtydiv">
+            <div class="qty-label">
+            <p>Qty:</p>
+            </div>
+            <div class="qtybox">
+            <span class="btnqty qtyminus icon icon-minus">-</span>
+            <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector quantity-input" readonly="">
+            <span class="btnqty qtyplus icon icon-plus">+</span>
+            </div>
+        </div>
+        <button type="submit" onclick="getValues()" class="btn btn-dark add">Add</button>
+      </form>     
+        </div>
+      </div>
+    </div>
+  <%});%>
+
+  
+</div>
+  </section>
+</section>
+<%- include('partials/footer.ejs') %>

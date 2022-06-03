@@ -1,0 +1,43 @@
+<%- include("partials/auth-header.ejs") %>
+
+<section id="checkout">
+<div class="container" style="text-align: center;">
+<div class="row" >
+  <%if(cart.legth == 0){%>
+    <h1>Cart is empty</h1>
+<%}%>
+  <% cart.forEach(item =>{%>
+      <%if(item.qty != 0){%>
+      <div class="column">
+        <img style="width: 8rem; margin-left:1rem; border:1px solid white; border-radius:10px;" src="images/products/<%= item.photo%>" alt="">
+      </div>
+      <div class="column" style="padding-left:0;">
+          <form action="/delete" method="post">
+              <input type="hidden" name="item" value="<%= item.item %>">
+          <button name="change" value="remove" id="remove" type="submit" style="color:black"> <i class="fa-regular fa-trash-can"></i></button>
+         </form>
+      <p style="color:black"><%= item.item %></p>
+      <p style="color:black">Price: ₹<strong><%= item.price %></strong></p>
+      <div class="qtydiv">
+          <div class="qty-label">
+          <label for="Quantity" class="quantity-selector">Qty:</label>
+          </div>
+          <div class="qtybox">
+             <form action="/delete" method="post">
+              <input type="hidden" name="item" value="<%= item.item%>">
+               <button type="submit" onclick="togle()" name="change" value="minus" style="font-size: 0.9rem;">-</button></span>
+               <input type="text" id="quantity" name="quantity" value="<%= item.qty %>" min="1" class="quantity-selector quantity-input" readonly="">
+               <button type="submit" onclick="togle()" name="change" value="plus">+</button></span>
+             </form>
+          </div>
+      </div>
+
+  </div>
+  <%}%>
+  <%});%>
+</div>
+<h1> Total Amount: <%= total_price %></h1>
+<a href="/create/orderId"> <button id="order-btn" class="btn btn-success " type="submit">Pay</button></a>
+</div>
+</section>
+<%- include("partials/auth-footer.ejs") %>
