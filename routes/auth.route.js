@@ -43,7 +43,7 @@ router.post("/login", loginUser);
 
 router.get("/userSecrets",(req,res)=>{
   if(req.isAuthenticated()){
-    res.send("i still love ankita")
+    res.send("this is my secret")
   }
   else{
     res.redirect("/login")
